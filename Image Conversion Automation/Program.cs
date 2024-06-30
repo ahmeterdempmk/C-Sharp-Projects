@@ -11,7 +11,7 @@ class Program
         Console.WriteLine("Image Converter Automation - Developed by Ahmet Erdem Pamuk\n");
 
         // Get the photo path to convert 
-        Console.Write("Enter the path of the image file you want to convert: (example: C:\\Users\\Username\\Desktop\\input.ico) ");
+        Console.Write("Enter the path of the image file you want to convert (example: C:\\Users\\Username\\Desktop\\input.ico): ");
         string inputPath = Console.ReadLine();
 
         // Check if the input path is null or empty
