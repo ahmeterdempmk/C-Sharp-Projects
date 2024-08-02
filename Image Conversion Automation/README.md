@@ -1,5 +1,5 @@
 
-# Image Converter
+# Image Conversation Automation
 
 A simple Image Converter Automation developed in C#.
 
