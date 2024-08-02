@@ -47,7 +47,7 @@ class Program
                 // Check if same type is converted to same type
                 if (extension == targetFormat)
                 {
-                    //Get the output path
+                    // Get the output path
                     Console.Write("Enter the full path where you want to save the file (example: C:\\Users\\Username\\Desktop\\output.ico): ");
                     string outputPath = Console.ReadLine();
 
