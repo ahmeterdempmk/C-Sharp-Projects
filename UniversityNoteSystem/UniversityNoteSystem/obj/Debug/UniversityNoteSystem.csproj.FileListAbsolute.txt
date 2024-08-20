@@ -1,0 +1,72 @@
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\UniversityNoteSystem.exe.config
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\UniversityNoteSystem.exe
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\UniversityNoteSystem.pdb
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.csproj.AssemblyReference.cache
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Properties.Resources.resources
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.csproj.GenerateResource.cache
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.csproj.CoreCompileInputs.cache
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.exe
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.pdb
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\EntityFramework.dll
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\EntityFramework.xml
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormStudentRegistration.resources
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\Universi.3A940C9B.Up2Date
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormDepartmentList.resources
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormStudentArrangement.resources
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormDepartmentAddition.resources
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormNoteEntry.resources
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormLogin.resources
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormStudentPanel.resources
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormMap.resources
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormLessonList.resources
+C:\Users\SAMSUNG\Desktop\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormLessonAddition.resources
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\UniversityNoteSystem.exe.config
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\UniversityNoteSystem.exe
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\UniversityNoteSystem.pdb
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\EntityFramework.dll
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\EntityFramework.xml
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.csproj.AssemblyReference.cache
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormDepartmentAddition.resources
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormDepartmentList.resources
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormLessonAddition.resources
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormLessonList.resources
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormLogin.resources
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormMap.resources
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormNoteEntry.resources
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormStudentArrangement.resources
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormStudentPanel.resources
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormStudentRegistration.resources
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Properties.Resources.resources
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.csproj.GenerateResource.cache
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.csproj.CoreCompileInputs.cache
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\Universi.3A940C9B.Up2Date
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.exe
+C:\Users\SAMSUNG\Desktop\C# Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.pdb
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\UniversityNoteSystem.exe.config
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\UniversityNoteSystem.exe
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\UniversityNoteSystem.pdb
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\EntityFramework.dll
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\EntityFramework.xml
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.csproj.AssemblyReference.cache
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormDepartmentAddition.resources
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormDepartmentList.resources
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormLessonAddition.resources
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormLessonList.resources
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormLogin.resources
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormMap.resources
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormNoteEntry.resources
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormStudentArrangement.resources
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormStudentPanel.resources
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Forms.FormStudentRegistration.resources
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.Properties.Resources.resources
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.csproj.GenerateResource.cache
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.csproj.CoreCompileInputs.cache
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\Universi.3A940C9B.Up2Date
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.exe
+C:\Users\SAMSUNG\Desktop\Developer\Form Projects\UniversityNoteSystem\UniversityNoteSystem\obj\Debug\UniversityNoteSystem.pdb

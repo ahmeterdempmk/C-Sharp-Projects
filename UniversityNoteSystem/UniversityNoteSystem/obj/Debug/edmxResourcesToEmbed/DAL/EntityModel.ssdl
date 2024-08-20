@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UniversityNoteSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AcademicianTB">
+    <Key>
+      <PropertyRef Name="AcademicianID" />
+    </Key>
+    <Property Name="AcademicianID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AcademicianName" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="AcademicianSurname" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="AcademicTitle" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="AcademicianNumber" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="AcademicianPassword" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DepartmentTB">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DepartmentName" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LessonTB">
+    <Key>
+      <PropertyRef Name="LessonID" />
+    </Key>
+    <Property Name="LessonID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LessonName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="NotesTB">
+    <Key>
+      <PropertyRef Name="NoteID" />
+    </Key>
+    <Property Name="NoteID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Exam1" Type="tinyint" />
+    <Property Name="Exam2" Type="tinyint" />
+    <Property Name="Exam3" Type="tinyint" />
+    <Property Name="Quiz1" Type="tinyint" />
+    <Property Name="Quiz2" Type="tinyint" />
+    <Property Name="Project" Type="tinyint" />
+    <Property Name="Average" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="Lesson" Type="int" />
+    <Property Name="Student" Type="int" />
+  </EntityType>
+  <EntityType Name="StudentTB">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentName" Type="nvarchar" MaxLength="20" />
+    <Property Name="StudentSurname" Type="nvarchar" MaxLength="25" />
+    <Property Name="StudentNumber" Type="char" MaxLength="5" />
+    <Property Name="StudentPassword" Type="nvarchar" MaxLength="10" />
+    <Property Name="StudentMail" Type="nvarchar" MaxLength="50" />
+    <Property Name="StudentPicture" Type="nvarchar" MaxLength="100" />
+    <Property Name="StudentDepartment" Type="int" />
+    <Property Name="StudentStatus" Type="bit" />
+  </EntityType>
+  <Association Name="FK_NotesTB_LessonTB">
+    <End Role="LessonTB" Type="Self.LessonTB" Multiplicity="0..1" />
+    <End Role="NotesTB" Type="Self.NotesTB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LessonTB">
+        <PropertyRef Name="LessonID" />
+      </Principal>
+      <Dependent Role="NotesTB">
+        <PropertyRef Name="Lesson" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NotesTB_StudentTB">
+    <End Role="StudentTB" Type="Self.StudentTB" Multiplicity="0..1" />
+    <End Role="NotesTB" Type="Self.NotesTB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StudentTB">
+        <PropertyRef Name="StudentID" />
+      </Principal>
+      <Dependent Role="NotesTB">
+        <PropertyRef Name="Student" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentTB_DEPARTMENTTB">
+    <End Role="DepartmentTB" Type="Self.DepartmentTB" Multiplicity="0..1" />
+    <End Role="StudentTB" Type="Self.StudentTB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DepartmentTB">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="StudentTB">
+        <PropertyRef Name="StudentDepartment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="averageCalculation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="UniversityNoteSystemModelStoreContainer">
+    <EntitySet Name="AcademicianTB" EntityType="Self.AcademicianTB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DepartmentTB" EntityType="Self.DepartmentTB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LessonTB" EntityType="Self.LessonTB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NotesTB" EntityType="Self.NotesTB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudentTB" EntityType="Self.StudentTB" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_NotesTB_LessonTB" Association="Self.FK_NotesTB_LessonTB">
+      <End Role="LessonTB" EntitySet="LessonTB" />
+      <End Role="NotesTB" EntitySet="NotesTB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NotesTB_StudentTB" Association="Self.FK_NotesTB_StudentTB">
+      <End Role="StudentTB" EntitySet="StudentTB" />
+      <End Role="NotesTB" EntitySet="NotesTB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentTB_DEPARTMENTTB" Association="Self.FK_StudentTB_DEPARTMENTTB">
+      <End Role="DepartmentTB" EntitySet="DepartmentTB" />
+      <End Role="StudentTB" EntitySet="StudentTB" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

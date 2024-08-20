@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Diagrams>
+      <Diagram DiagramId="634cb7fc8f474626aaca3ef1bc684d81" Name="Diagram1">
+        <EntityTypeShape EntityType="UniversityNoteSystemModel.AcademicianTB" Width="1.5" PointX="8.125" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityNoteSystemModel.DepartmentTB" Width="1.5" PointX="1.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityNoteSystemModel.LessonTB" Width="1.5" PointX="3.875" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityNoteSystemModel.NotesTB" Width="1.5" PointX="6" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityNoteSystemModel.StudentTB" Width="1.5" PointX="3.75" PointY="0.625" IsExpanded="true" />
+        <AssociationConnector Association="UniversityNoteSystemModel.FK_StudentTB_DEPARTMENTTB1" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityNoteSystemModel.FK_NotesTB_LessonTB" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityNoteSystemModel.FK_NotesTB_StudentTB" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

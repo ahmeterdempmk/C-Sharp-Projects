@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UniversityNoteSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AcademicianTB">
+    <Key>
+      <PropertyRef Name="AcademicianID" />
+    </Key>
+    <Property Name="AcademicianID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AcademicianName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AcademicianSurname" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AcademicTitle" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AcademicianNumber" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="AcademicianPassword" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DepartmentTB">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="StudentTBs" Relationship="Self.FK_STUDENTSTB_DEPARTMENTTB" FromRole="DepartmentTB" ToRole="StudentTB" />
+  </EntityType>
+  <EntityType Name="LessonTB">
+    <Key>
+      <PropertyRef Name="LessonID" />
+    </Key>
+    <Property Name="LessonID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LessonName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NotesTBs" Relationship="Self.FK_NOTESTB_LESSONSTB" FromRole="LessonTB" ToRole="NotesTB" />
+  </EntityType>
+  <EntityType Name="NotesTB">
+    <Key>
+      <PropertyRef Name="NoteID" />
+    </Key>
+    <Property Name="NoteID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Exam1" Type="Byte" />
+    <Property Name="Exam2" Type="Byte" />
+    <Property Name="Exam3" Type="Byte" />
+    <Property Name="Quiz1" Type="Byte" />
+    <Property Name="Quiz2" Type="Byte" />
+    <Property Name="ProjectPoint" Type="Byte" />
+    <Property Name="Lesson" Type="Int32" />
+    <Property Name="Student" Type="Int32" />
+    <NavigationProperty Name="LessonTB" Relationship="Self.FK_NOTESTB_LESSONSTB" FromRole="NotesTB" ToRole="LessonTB" />
+    <NavigationProperty Name="StudentTB" Relationship="Self.FK_NOTESTB_STUDENTSTB" FromRole="NotesTB" ToRole="StudentTB" />
+  </EntityType>
+  <EntityType Name="StudentTB">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="StudentSurname" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="StudentNumber" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="StudentPassword" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="StudentMail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StudentPicture" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="StudentDepartment" Type="Int32" />
+    <Property Name="StudentStatus" Type="Boolean" />
+    <NavigationProperty Name="DepartmentTB" Relationship="Self.FK_STUDENTSTB_DEPARTMENTTB" FromRole="StudentTB" ToRole="DepartmentTB" />
+    <NavigationProperty Name="NotesTBs" Relationship="Self.FK_NOTESTB_STUDENTSTB" FromRole="StudentTB" ToRole="NotesTB" />
+  </EntityType>
+  <Association Name="FK_STUDENTSTB_DEPARTMENTTB">
+    <End Role="DepartmentTB" Type="Self.DepartmentTB" Multiplicity="0..1" />
+    <End Role="StudentTB" Type="Self.StudentTB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DepartmentTB">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="StudentTB">
+        <PropertyRef Name="StudentDepartment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NOTESTB_LESSONSTB">
+    <End Role="LessonTB" Type="Self.LessonTB" Multiplicity="0..1" />
+    <End Role="NotesTB" Type="Self.NotesTB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LessonTB">
+        <PropertyRef Name="LessonID" />
+      </Principal>
+      <Dependent Role="NotesTB">
+        <PropertyRef Name="Lesson" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NOTESTB_STUDENTSTB">
+    <End Role="StudentTB" Type="Self.StudentTB" Multiplicity="0..1" />
+    <End Role="NotesTB" Type="Self.NotesTB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StudentTB">
+        <PropertyRef Name="StudentID" />
+      </Principal>
+      <Dependent Role="NotesTB">
+        <PropertyRef Name="Student" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UniversityNoteSystemEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AcademicianTBs" EntityType="Self.AcademicianTB" />
+    <EntitySet Name="DepartmentTBs" EntityType="Self.DepartmentTB" />
+    <EntitySet Name="LessonTBs" EntityType="Self.LessonTB" />
+    <EntitySet Name="NotesTBs" EntityType="Self.NotesTB" />
+    <EntitySet Name="StudentTBs" EntityType="Self.StudentTB" />
+    <AssociationSet Name="FK_STUDENTSTB_DEPARTMENTTB" Association="Self.FK_STUDENTSTB_DEPARTMENTTB">
+      <End Role="DepartmentTB" EntitySet="DepartmentTBs" />
+      <End Role="StudentTB" EntitySet="StudentTBs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NOTESTB_LESSONSTB" Association="Self.FK_NOTESTB_LESSONSTB">
+      <End Role="LessonTB" EntitySet="LessonTBs" />
+      <End Role="NotesTB" EntitySet="NotesTBs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NOTESTB_STUDENTSTB" Association="Self.FK_NOTESTB_STUDENTSTB">
+      <End Role="StudentTB" EntitySet="StudentTBs" />
+      <End Role="NotesTB" EntitySet="NotesTBs" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
